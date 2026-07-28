@@ -1,5 +1,7 @@
 # Design "Libary system"
 
+##
+
 ## Product
 
 ### Resources
@@ -35,7 +37,10 @@
 "product_price": "ราคา",
 "product_number": จำณวนหนังสือทั้งหมด,
 "product_use_number": จำณวนผู้ยืมทั้งหมด
-}`
+}
+`
+
+##
 
 ## Category
 
@@ -70,6 +75,8 @@
 ...
 
 }`
+
+##
 
 ## Orders
 
