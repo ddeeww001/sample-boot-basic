@@ -9,16 +9,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api") // ใช้ขึ้นตั้นเวลาเรียกใช้ method -> http://localhost:808/api/<methodname>
 public class HelloController {
 
-    @GetMapping("/hello") // /api/hello
-    String hello() {
-        return "Hello World!";
+    @GetMapping("/hello/{name}") // /api/hello
+    String hello(@PathVariable String name) {
+        return "Hello World! " + name + "!";
 
     }
 
-    // @GetMapping("/new1")
-    // String new1() {
-    // return "new";
+    @GetMapping("/hi")
+    String hi() {
+        return "Hi";
 
-    // }
+    }
 
 }
