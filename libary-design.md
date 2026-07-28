@@ -117,30 +117,30 @@
 
 }`
 
-<!-- ## User
+## Member
 
 ### Resources
 
-- user
+- member
 - orders
 - orders_in
 - orders_out
 
 ### Method
 
-| Method | URI                          | คำอธิบาย           | status | ใช่เมื่อ |
-| ------ | ---------------------------- | ------------------ | ------ | -------- |
-| GET    | `/us/{id}/orders`            | ดูประวัติคำสั่งยืม |
-| POST   | `/us/{id}/orders/orders_in`  | สั่งยืม (checkout) |
-| POST   | `/us/{id}/orders/orders_out` | สั่งยืม (checkout) |
+| Method | URI                              | คำอธิบาย           | status | ใช่เมื่อ |
+| ------ | -------------------------------- | ------------------ | ------ | -------- |
+| GET    | `/member/{id}/orders`            | ดูประวัติคำสั่งยืม |
+| POST   | `/member/{id}/orders/orders_in`  | สั่งยืม (checkout) |
+| POST   | `/member/{id}/orders/orders_out` | สั่งยืม (checkout) |
 
 ### JSON
 
 - customers
-  `/customers/{id}/orders
-  {
-  "customers_status": "สถานะการยืม", <!-- (เช่น ยืม, คืน และ เกินกำหนดยืม เป็นนต้น) -->
-
+`/customers/{id}/orders
+{
+"customers_status": "สถานะการยืม", <!-- (เช่น ยืม, คืน และ เกินกำหนดยืม เป็นนต้น) -->
+}
 <!--
 "product_id": รหัสหนังสือ,
 "product_price": ราคาหนังสือ,
@@ -149,4 +149,4 @@
 "date_due": "วันทีกำหนดคืน",
 "date_return": "วันที่คืน",
 "date_ext": จำนวนวันที่เกินกำหนดคืน
-}`  -->
+}`
