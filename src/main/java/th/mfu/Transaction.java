@@ -68,6 +68,7 @@ public class Transaction {
 
     public void setMember(Member member) {
         this.member = member;
+
     }
 
 }
